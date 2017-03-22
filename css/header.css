@@ -1,0 +1,19 @@
+#main-header{
+	line-height: 30px;
+	height: 160px; 
+	/*Anterior #ee6e73*/
+	background-color: #29BDBE;
+}
+
+#header-title{
+	color: black; 
+	font-family: "Roboto";
+	padding-bottom: 1cm; 
+	padding-top: 1cm;
+}
+
+#escudo-armas{
+	width:80px;
+	height:150px;
+	padding-top: 0.3cm;
+}
