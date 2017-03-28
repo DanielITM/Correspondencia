@@ -11,11 +11,12 @@
 		}
 		
 		/*Sesión SCA*/
-		function sesioncorresp($usuario,$tipo,$depto){
-			if(isset($usuario)&&isset($tipo)&&isset($depto)){
+		function sesioncorresp($usuario,$tipo,$depto,$nombre){
+			if(isset($usuario)&&isset($tipo)&&isset($depto)&&isset($nombre)){
 				$variables[0]=$usuario;
 				$variables[1]=$tipo;
 				$variables[2]=$depto;
+				$variables[3]=$nombre;
 				$_SESSION['sesioncorresp']=$variables;
 			}
 		}

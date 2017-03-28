@@ -12,6 +12,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" type="text/css" href="css/barra_admin.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <script type="text/javascript">
@@ -19,15 +20,23 @@
 		//Disparadores de activación para componentes de navbar
 		$(".button-collapse").sideNav();
 		$(".dropdown-button").dropdown();
-		//Muestra formulario de registro desde menú navbar
+		//Muestra formulario de registro de usuarios desde menú navbar
 		$("#new_user").click(function(event) {
 			$("#principal").load('vista/administrador/registro_usuarios.php');
 		});
-		//Muestra formulario de registro desde menú navbar responsivo
+		//Muestra formulario de registro de usuarios desde menú navbar responsivo
 		$("#new_user_resp").click(function(event) {
 			$("#principal").load('vista/administrador/registro_usuarios.php');
 		});
+    //Muestra formulario de registro de correspondencia desde menu navbar
+    $("#new_corresp").click(function(event) {
+      $("#principal").load('vista/administrador/registro_correspondencia.php');
     });
+    //Muestra formulario de registro de correspondencia desde menu navbar responsivo
+    $("#new_corresp_resp").click(function(event) {
+      $("#principal").load('vista/administrador/registro_correspondencia.php');
+    });
+  });
 </script>
 </head>
 <body>
@@ -40,13 +49,13 @@
 </ul>
 <!-- Estructura para dropdown responsivo -->
 <ul id="dropdown2" class="dropdown-content">
-  <li><a href="#!" id="new_corresp">Agregar correspondencia</a></li>
+  <li><a href="#!" id="new_corresp_resp">Agregar correspondencia</a></li>
   <li class="divider"></li>
   <li><a href="#!">Consulta</a></li>
   <li class="divider"></li>
 </ul>
 <!-- Estructura Navbar -->
-    <nav style="background-color: #29BDBE">
+    <nav id="barra-admin">
       <div class="nav-wrapper">
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">

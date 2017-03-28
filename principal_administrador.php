@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/login.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="shortcut icon" href="img/favicon.png">
   <script src="js/jquery-3.0.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="js/index.js"></script> 

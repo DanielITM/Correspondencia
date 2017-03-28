@@ -7,7 +7,7 @@
 	<br>
 	<br>
 	<br>
-	<h3 align="center" >Bienvenido(a) <?php echo ($_SESSION['sesioncorresp'][0]);?></h3>
+	<h3 align="center" >Bienvenido(a) <?php echo ($_SESSION['sesioncorresp'][3]);?></h3>
 	<br>
 	<br>
 	<br>	

@@ -1,0 +1,15 @@
+#logo-si-financia{
+	width: 190px; 
+	height: 150px; 
+	padding-top: 0.5cm;
+}
+
+#formulario{
+	display: inline-block; 
+	padding: 32px 48px 0px 48px; 
+	border: 1px solid #EEE;
+}
+
+#boton-iniciar{
+	background-color: #29BDBE;
+}

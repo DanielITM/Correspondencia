@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/login.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="js/jquery-3.0.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="js/index.js"></script> 
@@ -21,10 +22,10 @@
 ?>
   <main>
     <center>
-      <img class="responsive-img" style="width: 190px; height: 150px; padding-top: 0.5cm;" src="img/logo_si_financia.png" />
+      <img class="responsive-img" id="logo-si-financia" src="img/logo_si_financia.png" />
       <h5>Bienvenido<br><br>Iniciar sesión</h5>
       <div class="container">
-        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+        <div class="z-depth-1 grey lighten-4 row" id="formulario">
           <form class="col s12" method="post" name="login" action="valida_acceso.php">
             <div class='row'>
               <div class='col s12'>
@@ -47,7 +48,7 @@
             <br/>
             <center>
               <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect' style="background-color: #29BDBE">Ingresar</button>
+                <button type='submit' name='btn_login' id="boton-iniciar" class='col s12 btn btn-large waves-effect'>Ingresar</button>
               </div>
             </center>
           </form>

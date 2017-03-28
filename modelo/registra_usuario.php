@@ -8,8 +8,8 @@
 	$password = $_POST['password'];
 	$tipo = $_POST['tipo'];
 	$departamento = $_POST['departamento'];
-	//Falta poner el id_departamento////////////////////
-	$sql="insert into usuario values (".$query->siguiente_usuario().", '$tipo', '$usuario', '$password', $departamento);";
+	$nombre = $_POST['nombre'];
+	$sql="insert into usuario values (".$query->siguiente_usuario().", '$tipo', '$usuario', '$password', $departamento, '$nombre');";
 	$result=$query->results($sql);
 	if(!($result))
 		echo "<script>alert('Usuario no registrado');</script>";

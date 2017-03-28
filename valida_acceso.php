@@ -39,7 +39,7 @@
 				if(pg_num_rows($log)>0){
 					$row = pg_fetch_array($log);
 					if ($row['tipo']=='t') {
-						$sesion-> sesioncorresp($usuario, $row['tipo'],0);
+						$sesion-> sesioncorresp($usuario, $row['tipo'],0, $row['nombre_completo']);
 						$conecta->cerrar();
 						echo '<script>window.location="principal_administrador.php"</script>';
 					}elseif ($row['tipo']=='f') {
