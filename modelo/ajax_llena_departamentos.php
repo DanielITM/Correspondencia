@@ -4,8 +4,8 @@
   }
 	include ("queries.php");
 	$query= new operaciones();
-	@$dependencia= $_POST['depen'];
-	$sql="SELECT * FROM departamento WHERE id_dependencia = ".$dependencia;
+	@$dependencia= $_POST['idarea'];
+	$sql="SELECT * FROM departamento WHERE id_area = '$dependencia'";
 	$result=$query->results($sql);
 		while ($row=pg_fetch_array($result)) {
 			echo "<option value='".$row['id_departamento']."'>".$row['nombre']."</option>";

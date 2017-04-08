@@ -1,6 +1,5 @@
 #main-header{
-	line-height: 30px;
-	height: 160px; 
+	height: 150px; 
 	/*Anterior #ee6e73*/
 	background-color: #29BDBE;
 }
@@ -13,7 +12,7 @@
 }
 
 #escudo-armas{
-	width:80px;
-	height:150px;
+	width:70px;
+	height:130px;
 	padding-top: 0.3cm;
 }

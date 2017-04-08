@@ -9,7 +9,7 @@
 	$tipo = $_POST['tipo'];
 	$departamento = $_POST['departamento'];
 	$nombre = $_POST['nombre'];
-	$sql="insert into usuario values (".$query->siguiente_usuario().", '$tipo', '$usuario', '$password', $departamento, '$nombre');";
+	$sql="insert into usuario values (".$query->siguiente_usuario().", '$tipo', '$usuario', '$password', $departamento, upper('$nombre'));";
 	$result=$query->results($sql);
 	if(!($result))
 		echo "<script>alert('Usuario no registrado');</script>";

@@ -15,7 +15,6 @@
   <title>Administrador | SiFinancia</title>
   <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/login.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="shortcut icon" href="img/favicon.png">
   <script src="js/jquery-3.0.0.min.js"></script>
@@ -31,8 +30,8 @@
 	<div id="menu-principal">
 		<?php include 'menu_admin.php';?>
 	</div>
-	<div id="principal" >
 	<!-- En el div principal se carga el contenido de la pagina -->
+	<div id="principal" >
 		<?php include 'bienvenida.php';?>
 	</div>
 	<!-- En el div bottom se carga el pie de la pagina -->

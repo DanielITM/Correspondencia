@@ -13,6 +13,7 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="css/barra_admin.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <script type="text/javascript">
@@ -36,6 +37,14 @@
     $("#new_corresp_resp").click(function(event) {
       $("#principal").load('vista/administrador/registro_correspondencia.php');
     });
+
+    $("#consulta_corresp").click(function(event) {
+      $("#principal").load('vista/consultas/consulta_correspondencia.php');
+    });
+
+    $("#consulta_corresp_resp").click(function(event) {
+      $("#principal").load('vista/consultas/consulta_correspondencia.php');
+    });
   });
 </script>
 </head>
@@ -44,14 +53,14 @@
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!" id="new_corresp">Agregar correspondencia</a></li>
   <li class="divider"></li>
-  <li><a href="#!">Consulta</a></li>
+  <li><a href="#!" id="consulta_corresp">Consulta</a></li>
   <li class="divider"></li>
 </ul>
 <!-- Estructura para dropdown responsivo -->
 <ul id="dropdown2" class="dropdown-content">
   <li><a href="#!" id="new_corresp_resp">Agregar correspondencia</a></li>
   <li class="divider"></li>
-  <li><a href="#!">Consulta</a></li>
+  <li><a href="#!" id="consulta_corresp_resp">Consulta</a></li>
   <li class="divider"></li>
 </ul>
 <!-- Estructura Navbar -->

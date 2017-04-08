@@ -138,7 +138,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input type="text" name="nom-cop" id="nom-cop" required="required" onchange="habilita_boton_registro()">
+                <input type="text" name="nom-cop" id="nom-cop" required="required" style="text-transform:uppercase;" onchange="habilita_boton_registro()">
                 <label for='nom-cop'>Nombre completo</label>
               </div>
             </div>
